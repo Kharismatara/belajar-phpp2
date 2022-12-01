@@ -5,13 +5,13 @@ If( isset($_POST["submit"]) ) {
 	$nim = $_POST['nim'];
     $nama = $_POST['nama'];
     $id_jurusan = $_POST['id_jurusan'];
-    $jenis_kelamin = $_POST['jenis_kelamin'];
-    $tempat_tll = $_POST['tempat_tll'];
-    $tanggal_lahir = $_POST['tanggal_lahir'];
+    $jk = $_POST['jenis_kelamin'];
+    $tel = $_POST['tempat_tll'];
+    $tag = $_POST['tanggal_lahir'];
     $alamat = $_POST['alamat'];
     $con = mysqli_connect("localhost", "root", "", "seal_fakultas");
-    $sql = "insert into mahasiswa('nim','nama', 'id_jurusan','jenis_kelamin','tempat_tll', 'tanggal_lahir','alamat') value($nim','$nama', '$id_jurusan','$jenis_kelamin',
-    '$tempat_tll', '$tanggal_lahir','$alamat')";
+    $sql = "insert into mahasiswa('nim','nama', 'id_jurusan','jenis_kelamin','tempat_tll', 'tanggal_lahir','alamat') value($nim','$nama', '$id_jurusan','$jk',
+    '$tel', '$tag','$alamat')";
 
     //2 check coneksi 
  if (mysqli_connect_errno()) {
